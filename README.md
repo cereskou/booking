@@ -14,4 +14,4 @@ OSSを利用して、０から予約システムを作成します。
 - gorm
 - casbin rbac
 - JSON to go generate
-- logrus ![logrus](github.com/sirupsen/logrus)
+- logrus [logrus](github.com/sirupsen/logrus)
