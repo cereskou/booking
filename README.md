@@ -18,11 +18,11 @@ OSSを利用して、０から予約システムを作成します。
 
 ## 環境セットアップ
 1. Mariadb
-**dockerを使用してmariadbを構築する**
+  **dockerを使用してmariadbを構築する**
 - MacOS 11.0.1
 - Docker 19.03.13
 
-**Docker CLI or Kitematic**
+  **Docker CLI or Kitematic**
 ```
 # docker pull mariadb:10.5
 # mkdir ~/mdbdata
