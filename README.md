@@ -17,17 +17,10 @@ OSSを利用して、０から予約システムを作成します。
 - [logrus](https://github.com/sirupsen/logrus)
 
 ## 環境セットアップ
-1. Mariadb
-  **dockerを使用してmariadbを構築する**
+1. Mariadb  
+**dockerを使用してmariadbを構築する**
 - MacOS 11.0.1
 - Docker 19.03.13
 
-  **Docker CLI or Kitematic**
-```
-# docker pull mariadb:10.5
-# mkdir ~/mdbdata
-```
-環境変数にMYSQL_ROOT_PASSWORDを作成します。（パスワードの例：12345678）  ![ROOT_PASSWORD](https://github.com/cereskou/booking/blob/main/doc/images/vars.png)
-
-  
+[手順]()  
 
