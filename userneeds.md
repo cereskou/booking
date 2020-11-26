@@ -27,6 +27,8 @@
 
 ### BACKLOG
 
+![backlog](doc/images/ra.png)
+
 1. 人  
 
     - 個人情報の管理
