@@ -4,9 +4,10 @@ CREATE TABLE `users` (
   `email` varchar(256) NOT NULL COMMENT 'Email',
   `email_confirmed` bit(1) NOT NULL COMMENT 'Email Confirmed',
   `password_hash` varchar(256) DEFAULT NULL,
-  `concurrency_stamp` varchar(100) DEFAULT NULL COMMENT '排他スタンプ',
   `lockout_end` timestamp NULL DEFAULT NULL,
   `lockout_enabled` bit(1) NOT NULL DEFAULT b'1',
   `access_failed_count` int(11) NOT NULL DEFAULT 0,
+  `update_user` varchar(64) NOT NULL COMMENT '更新者',
+  `update_date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp() COMMENT '更新日時',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
