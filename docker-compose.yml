@@ -1,0 +1,27 @@
+version: "3"
+services:
+  db:
+    image: mariadb:10.5
+    container_name: mariadb
+    hostname: db-server
+    ports:
+      - 3306:3306
+    networks:
+      - container-link
+    volumes:
+      - ./db:/var/lib/mysql
+      - ./logs:/var/log/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+
+networks:
+  default:
+    external:
+      name: bridge
+  container-link:
+    name: docker.internal
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: "172.20.100.0/24"
