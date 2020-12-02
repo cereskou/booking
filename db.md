@@ -62,3 +62,12 @@ MariaDB [(none)]>
 ```
 
 接続できました。  
+
+### CHNAGE PASSWORD
+
+```bash
+% mysql -u root -p
+% set password for 'booking'@'%' = PASSWORD('p3130##7');
+% flush privileges;
+% exit;
+```
