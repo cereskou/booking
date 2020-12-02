@@ -7,7 +7,8 @@ CREATE TABLE `users` (
   `lockout_end` timestamp NULL DEFAULT NULL,
   `lockout_enabled` bit(1) NOT NULL DEFAULT b'1',
   `access_failed_count` int(11) NOT NULL DEFAULT 0,
+  `login_time` datetime NOT NULL COMMENT '前回ログイン日時',
   `update_user` varchar(64) NOT NULL COMMENT '更新者',
   `update_date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp() COMMENT '更新日時',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='システム用ユーザー情報'
