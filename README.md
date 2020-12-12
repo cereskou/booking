@@ -33,4 +33,5 @@ OSSを利用して、０から塾向け予約システムを作成します。
 
 ## 開発準備
 
-- [swag](swag.md)
+- [swag](swag.md) generate swagger specification from source code.  
+
